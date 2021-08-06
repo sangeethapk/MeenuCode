@@ -17,6 +17,18 @@ export class CourseServiceService {
     return this.http.post("http://localhost:3000/insert",{"applicant":data})
     .subscribe(data =>{console.log(data)});
   }
+  institutionalBrouchreRequest(data:any){
+  
+
+    return this.http.post("http://localhost:3000/insertInstitutionalRequest",{"applicant":data})
+    .subscribe(data =>{console.log(data)});
+  }
+  corporateBrouchreRequest(data:any){
+  
+
+    return this.http.post("http://localhost:3000/insertCorporateRequest",{"applicant":data})
+    .subscribe(data =>{console.log(data)});
+  }
 
   getRetailBrochure(){
       
